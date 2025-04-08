@@ -1,0 +1,44 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\repositories\\UFide\\Progra Avanzada _\\_temp\\CAAP2\\CAAP2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A16D5B3-7F89-47C1-BDBC-7541653B1EC9}|CAAP2.Data\\CAAP2.Data.csproj|e:\\repositories\\ufide\\progra avanzada _\\_temp\\caap2\\caap2\\caap2.data\\ordersmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{2A16D5B3-7F89-47C1-BDBC-7541653B1EC9}|CAAP2.Data\\CAAP2.Data.csproj|solutionrelative:caap2.data\\ordersmodel.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OrdersModel.edmx [Diagram1]",
+              "DocumentMoniker": "E:\\repositories\\UFide\\Progra Avanzada _\\_temp\\CAAP2\\CAAP2\\CAAP2.Data\\OrdersModel.edmx",
+              "RelativeDocumentMoniker": "CAAP2.Data\\OrdersModel.edmx",
+              "ToolTip": "E:\\repositories\\UFide\\Progra Avanzada _\\_temp\\CAAP2\\CAAP2\\CAAP2.Data\\OrdersModel.edmx [Diagram1]",
+              "RelativeToolTip": "CAAP2.Data\\OrdersModel.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-04-07T23:24:30.665Z",
+              "EditorCaption": " [Diagram1]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

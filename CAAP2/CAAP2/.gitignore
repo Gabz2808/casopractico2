@@ -1,0 +1,91 @@
+﻿## .gitignore para ASP.NET Framework MVC
+
+## Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+## Build Results
+[Bb]in/
+[Oo]bj/
+*.dll
+*.exe
+
+## NuGet Packages
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.assets.json
+*.nuspec
+*.psmdcp
+
+# NuGet v3
+*.nuget.props
+*.nuget.targets
+
+## Publish
+*.Publish.xml
+publish/
+
+## IIS
+*.vspscc
+*.vssscc
+*.webtest
+
+## Logs
+*.log
+
+## Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+## Rider
+.idea/
+
+## Web essentials cache
+*.cache
+
+## User-specific files
+*.sln.docstates
+*.userprefs
+
+## Others
+TestResults/
+*.dbmdl
+*.bak
+*.sql
+
+# Entity Framework
+*.edmx.diagram
+*.edmx.sql
+
+# Azure Web Apps
+.scm/
+
+# Local DB
+*.mdf
+*.ldf
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# npm & node
+node_modules/
+npm-debug.log
+
+# Bower
+bower_components/
+
+# LibMan
+wwwroot/lib/
+libman.json
+
+# JetBrains Rider
+.idea/
+
+# VS Code
+.vscode/
