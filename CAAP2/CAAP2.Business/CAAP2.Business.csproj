@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2B8BC535-5241-488C-AC1F-41764325BE0E}</ProjectGuid>
+    <ProjectGuid>{B989B614-A8CE-4448-A694-D02A9C60B49F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CAAP2.Business</RootNamespace>
@@ -41,7 +41,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAAP2.Data\CAAP2.Data.csproj">
+      <Project>{ecc5f403-5b07-4d2d-93f9-1a8191f26efb}</Project>
+      <Name>CAAP2.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAAP2.Repository\CAAP2.Repository.csproj">
+      <Project>{0cf61611-9be0-4fd6-93b9-d6cdc1a85dd4}</Project>
+      <Name>CAAP2.Repository</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
