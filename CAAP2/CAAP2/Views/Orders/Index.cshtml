@@ -59,5 +59,34 @@
         </td>
     </tr>
 }
+    <hr />
+    <h3>
+        Orders by priority (Execution view)
+    </h3>
 
-</table>
+<div>
+    <table class="table table-striped">
+        <tr>
+            <th># Orden</th>
+            <th>Detalle</th>
+            <th>Fecha</th>
+            <th>Prioridad</th>
+            <th>Cliente</th>
+            <th>Premium</th>
+            <th>Estado</th>
+        </tr>
+
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderID</td>
+                <td>@order.OrderDetail</td>
+                <td>@order.CreatedDate?.ToShortDateString()</td>
+                <td>@order.Priority</td>
+                <td>@order.User.FullName</td>
+                <td>@(order.User.IsPremium == true ? "Yes" : "No")</td>
+                <td>@order.Status</td>
+            </tr>
+        }
+    </table>
+</div>

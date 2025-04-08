@@ -17,10 +17,10 @@ namespace CAAP2.Business
         {
             _repositoryOrder = new RepositoryOrder();
         }
-        public IEnumerable<Order> GetAllCategories()
+        public IEnumerable<Order> GetAllOrders()
         {
-            var categories = _repositoryOrder.GetAll();
-            return categories;
+            var orders = _repositoryOrder.GetAll();
+            return orders;
         }
         public Order GetById(int id)
         {
@@ -54,6 +54,16 @@ namespace CAAP2.Business
         public void Dispose()
         {
             _repositoryOrder.Dispose();
+        }
+
+        public List<Order> GetOrdersToProcess()
+        {
+            var orders = _repositoryOrder.GetAll()
+                .Where(o => o.Status == "Pending")
+                .OrderByDescending(o => o.User.IsPremium)
+                .ThenByDescending(o => o.Priority)
+                .ThenBy(o=> o.CreatedDate).ToList();
+            return orders;
         }
     }
 }

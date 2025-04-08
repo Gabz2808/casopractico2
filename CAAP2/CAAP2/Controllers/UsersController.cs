@@ -6,18 +6,19 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using AdvancedProgramming.Business;
 using CAAP2.Data;
 
 namespace CAAP2.Controllers
 {
     public class UsersController : Controller
     {
-        private OrdersdbEntities db = new OrdersdbEntities();
+        private UserManager _manager = new UserManager();
 
         // GET: Users
         public ActionResult Index()
         {
-            return View(db.Users.ToList());
+            return View(_manager.GetAllUsers());
         }
 
         // GET: Users/Details/5
@@ -27,7 +28,7 @@ namespace CAAP2.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            User user = db.Users.Find(id);
+            User user = _manager.GetById((int)id);
             if (user == null)
             {
                 return HttpNotFound();
@@ -50,8 +51,8 @@ namespace CAAP2.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Users.Add(user);
-                db.SaveChanges();
+                _manager.Add(user);
+                _manager.Save();
                 return RedirectToAction("Index");
             }
 
@@ -65,7 +66,7 @@ namespace CAAP2.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            User user = db.Users.Find(id);
+            User user = _manager.GetById((int)id);
             if (user == null)
             {
                 return HttpNotFound();
@@ -82,8 +83,8 @@ namespace CAAP2.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(user).State = EntityState.Modified;
-                db.SaveChanges();
+                _manager.Update(user);
+                _manager.Save();
                 return RedirectToAction("Index");
             }
             return View(user);
@@ -96,7 +97,7 @@ namespace CAAP2.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            User user = db.Users.Find(id);
+            User user = _manager.GetById((int)id);
             if (user == null)
             {
                 return HttpNotFound();
@@ -109,9 +110,9 @@ namespace CAAP2.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            User user = db.Users.Find(id);
-            db.Users.Remove(user);
-            db.SaveChanges();
+            User user = _manager.GetById((int)id);
+            _manager.Delete(id);
+            _manager.Save();
             return RedirectToAction("Index");
         }
 
@@ -119,7 +120,7 @@ namespace CAAP2.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                _manager.Dispose();
             }
             base.Dispose(disposing);
         }

@@ -6,19 +6,20 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using CAAP2.Business;
 using CAAP2.Data;
 
 namespace CAAP2.Controllers
 {
     public class OrdersController : Controller
     {
-        private OrdersdbEntities db = new OrdersdbEntities();
+        private OrderManager _manager = new OrderManager();
 
         // GET: Orders
         public ActionResult Index()
         {
-            var orders = db.Orders.Include(o => o.User);
-            return View(orders.ToList());
+
+            return View(_manager.GetOrdersToProcess());
         }
 
         // GET: Orders/Details/5
@@ -28,7 +29,7 @@ namespace CAAP2.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Order order = db.Orders.Find(id);
+            Order order = _manager.GetById((int)id);
             if (order == null)
             {
                 return HttpNotFound();
@@ -39,7 +40,6 @@ namespace CAAP2.Controllers
         // GET: Orders/Create
         public ActionResult Create()
         {
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "FullName");
             return View();
         }
 
@@ -52,12 +52,11 @@ namespace CAAP2.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Orders.Add(order);
-                db.SaveChanges();
+                _manager.Add(order);
+                _manager.Save();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "FullName", order.UserID);
             return View(order);
         }
 
@@ -68,12 +67,11 @@ namespace CAAP2.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Order order = db.Orders.Find(id);
+            Order order = _manager.GetById((int)id);
             if (order == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "FullName", order.UserID);
             return View(order);
         }
 
@@ -86,11 +84,10 @@ namespace CAAP2.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(order).State = EntityState.Modified;
-                db.SaveChanges();
+                _manager.Update(order);
+                _manager.Save();
                 return RedirectToAction("Index");
             }
-            ViewBag.UserID = new SelectList(db.Users, "UserID", "FullName", order.UserID);
             return View(order);
         }
 
@@ -101,7 +98,7 @@ namespace CAAP2.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Order order = db.Orders.Find(id);
+            Order order = _manager.GetById((int)id);
             if (order == null)
             {
                 return HttpNotFound();
@@ -114,9 +111,9 @@ namespace CAAP2.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Order order = db.Orders.Find(id);
-            db.Orders.Remove(order);
-            db.SaveChanges();
+            Order order = _manager.GetById((int)id);
+            _manager.Delete(id);
+            _manager.Save();
             return RedirectToAction("Index");
         }
 
@@ -124,7 +121,7 @@ namespace CAAP2.Controllers
         {
             if (disposing)
             {
-                db.Dispose();
+                _manager.Dispose();
             }
             base.Dispose(disposing);
         }
