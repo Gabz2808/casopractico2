@@ -1,0 +1,33 @@
+﻿@model IEnumerable<CAAP2.Data.Order>
+
+@foreach (var order in Model)
+{
+    <tr id="order-row-@order.OrderID">
+        <td>@order.OrderID</td>
+        <td>@order.OrderDetail</td>
+        <td>@(order.CreatedDate?.ToString("g"))</td>
+        <td>@order.Priority</td>
+        <td>@order.User.FullName</td>
+        <td>@(order.User.IsPremium == true ? "Yes" : "No")</td>
+        <td id="status-@order.OrderID">@order.Status</td>
+        <td>
+            <div class="d-flex flex-wrap gap-1">
+                <button class="btn btn-success btn-sm" onclick="executeOrder(@order.OrderID)">
+                    Ejecutar
+                </button>
+                <button class="btn btn-warning btn-sm" onclick="pauseOrder(@order.OrderID)">
+                    Pausar
+                </button>
+                <button class="btn btn-danger btn-sm" onclick="cancelOrder(@order.OrderID)">
+                    Cancelar
+                </button>
+                <a href="@Url.Action("Details", "Orders", new { id = order.OrderID })" class="btn btn-info btn-sm">
+                    Detalle
+                </a>
+                <a href="@Url.Action("Edit", "Orders", new { id = order.OrderID })" class="btn btn-primary btn-sm">
+                    Modificar
+                </a>
+            </div>
+        </td>
+    </tr>
+}

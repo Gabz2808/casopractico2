@@ -19,8 +19,12 @@
         <div class="form-group">
             @Html.LabelFor(model => model.UserID, "UserID", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownList("UserID", null, htmlAttributes: new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.UserID, "", new { @class = "text-danger" })
+                @Html.DropDownListFor(
+                    model => model.UserID,
+                    new SelectList((IEnumerable<CAAP2.Data.User>)ViewBag.Users, "UserID", "FullName", Model.UserID),
+                    "-- Seleccione un usuario --",
+                    new { @class = "form-control" }
+                )
             </div>
         </div>
 

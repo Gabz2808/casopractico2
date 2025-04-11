@@ -10,3 +10,15 @@ C:\Users\Gabri\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\obj\Deb
 C:\Users\Gabri\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\obj\Debug\CAAP2.Data.csproj.Up2Date
 C:\Users\Gabri\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\obj\Debug\CAAP2.Data.dll
 C:\Users\Gabri\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\obj\Debug\CAAP2.Data.pdb
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\bin\Debug\CAAP2.Data.dll.config
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\bin\Debug\CAAP2.Data.dll
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\bin\Debug\CAAP2.Data.pdb
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\bin\Debug\EntityFramework.dll
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\bin\Debug\EntityFramework.xml
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\obj\Debug\CAAP2.Data.csproj.AssemblyReference.cache
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\obj\Debug\CAAP2.Data.csproj.CoreCompileInputs.cache
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\obj\Debug\CAAP2.Data.csproj.Up2Date
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\obj\Debug\CAAP2.Data.dll
+C:\Users\danny\OneDrive\Documentos\GitHub\casopractico2\CAAP2\CAAP2.Data\obj\Debug\CAAP2.Data.pdb
