@@ -17,5 +17,13 @@ namespace CAAP2
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+    
+    protected void Application_Error()
+        {
+            Exception ex = Server.GetLastError();
+            Server.ClearError();
+
+            Response.Redirect("~/Shared/Error");
+        }
     }
 }

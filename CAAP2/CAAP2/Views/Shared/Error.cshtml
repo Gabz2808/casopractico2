@@ -1,9 +1,18 @@
 ﻿@model System.Web.Mvc.HandleErrorInfo
-
 @{
     ViewBag.Title = "Error";
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1 class="text-danger">Error.</h1>
-<h2 class="text-danger">An error occurred while processing your request.</h2>
-
+<div class="container text-center mt-5">
+    <div class="alert alert-danger shadow-lg p-4 rounded" role="alert">
+        <h1 class="display-4"><i class="glyphicon glyphicon-warning-sign"></i> Oops! An error has occurred.</h1>
+        <p class="lead text-muted mt-3">
+            Something went wrong while processing your request. Please try again or return to the home page.
+        </p>
+        <hr />
+        <a href="@Url.Action("Index", "Home")" class="btn btn-lg btn-primary mt-3">
+            <i class="glyphicon glyphicon-home"></i> Return to Home
+        </a>
+    </div>
+</div>

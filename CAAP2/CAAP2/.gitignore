@@ -89,3 +89,7 @@ libman.json
 
 # VS Code
 .vscode/
+
+
+Web.config
+App.Config
