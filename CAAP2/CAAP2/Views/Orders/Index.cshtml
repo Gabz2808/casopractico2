@@ -1,92 +1,210 @@
-﻿@model IEnumerable<CAAP2.Data.Order>
+﻿@model Tuple<IEnumerable<CAAP2.Data.Order>, CAAP2.Data.Order>
 
 @{
     ViewBag.Title = "Index";
 }
+@Html.AntiForgeryToken()
+<div class="row">
+    <div class="col-md-9">
+        <h3>Orders by priority (Execution view)</h3>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th># Orden</th>
+                    <th>Detalle</th>
+                    <th>Fecha</th>
+                    <th>Prioridad</th>
+                    <th>Cliente</th>
+                    <th>Premium</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="pendingOrdersBody">
+                @Html.Partial("PendingOrderPartial", Model.Item1.Where(o => o.Status == "Pending"))
+            </tbody>
 
-<h2>Index</h2>
+        </table>
+    </div>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.OrderDetail)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreatedDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Priority)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TotalAmount)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Status)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.User.FullName)
-        </th>
-        <th></th>
-    </tr>
+    <div class="col-md-3">
+        <div class="mb-4">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+                <h5 class="mb-0">Orden en Proceso</h5>
+                <button class="btn btn-outline-secondary btn-sm" onclick="advanceAndRefresh()" title="Actualizar orden en proceso">
+                    🔄
+                </button>
+            </div>
+            <div id="processingOrderDiv">
+                @Html.Partial("ProcessingOrderPartial", Model.Item1.Where(o => o.Status == "Processing"))
+            </div>
+        </div>
+        <div>
+            <h5 class="mb-2">Orden en Pausa</h5>
+            <div id="pausedOrderDiv">
+                @Html.Partial("PausedOrderPartial", Model.Item1.Where(o => o.Status == "Paused"))
+            </div>
+        </div>
+    </div>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.OrderDetail)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreatedDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Priority)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TotalAmount)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Status)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.User.FullName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OrderID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OrderID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OrderID })
-        </td>
-    </tr>
-}
-    <hr />
-    <h3>
-        Orders by priority (Execution view)
-    </h3>
-
-<div>
-    <table class="table table-striped">
-        <tr>
-            <th># Orden</th>
-            <th>Detalle</th>
-            <th>Fecha</th>
-            <th>Prioridad</th>
-            <th>Cliente</th>
-            <th>Premium</th>
-            <th>Estado</th>
-        </tr>
-
-        @foreach (var order in Model)
-        {
-            <tr>
-                <td>@order.OrderID</td>
-                <td>@order.OrderDetail</td>
-                <td>@order.CreatedDate?.ToShortDateString()</td>
-                <td>@order.Priority</td>
-                <td>@order.User.FullName</td>
-                <td>@(order.User.IsPremium == true ? "Yes" : "No")</td>
-                <td>@order.Status</td>
-            </tr>
-        }
-    </table>
 </div>
+
+@section Scripts {
+    <script>
+
+        function executeOrder(id) {
+            if (!confirm("¿Deseas ejecutar esta orden?")) return;
+            const token = $('input[name="__RequestVerificationToken"]').val();
+            fetch('@Url.Action("Execute", "Orders")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                },
+                body: `id=${id}&__RequestVerificationToken=${token}`
+            })
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById("status-" + id).innerText = "Processing";
+                    document.getElementById("order-row-" + id).remove();
+                    refreshProcessingOrder();
+                    refreshPendingOrders();
+                } else {
+                    alert("No se pudo ejecutar la orden.");
+                }
+            });
+        }
+
+        function refreshProcessingOrder() {
+            fetch('@Url.Action("CurrentProcessing", "Orders")')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById("processingOrderDiv").innerHTML = html;
+            });
+        }
+        function cancelOrder(id) {
+            if (!confirm("¿Estás seguro de que deseas cancelar esta orden?")) return;
+            const token = $('input[name="__RequestVerificationToken"]').val();
+            fetch('@Url.Action("Cancel", "Orders")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                },
+                body: `id=${id}&__RequestVerificationToken=${token}`
+            })
+            .then(response => {
+                if (response.ok) {
+                    refreshProcessingOrder();
+                    refreshPendingOrders();
+                } else {
+                    alert("No se pudo cancelar la orden.");
+                }
+            });
+        }
+
+        function cancelOrderProcessing(id) {
+            if (!confirm("¿Estás seguro de que deseas cancelar esta orden?")) return;
+            const token = $('input[name="__RequestVerificationToken"]').val();
+            fetch('@Url.Action("CancelProcessing", "Orders")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                },
+                body: `id=${id}&__RequestVerificationToken=${token}`
+            })
+            .then(response => {
+                if (response.ok) {
+                    refreshProcessingOrder();
+                    refreshPendingOrders();
+                } else {
+                    alert("No se pudo cancelar la orden.");
+                }
+            });
+        }
+
+        function pauseOrder(id) {
+            if (!confirm("¿Deseas pausar esta orden?")) return;
+            const token = $('input[name="__RequestVerificationToken"]').val();
+            fetch('@Url.Action("Pause", "Orders")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                },
+                body: `id=${id}&__RequestVerificationToken=${token}`
+            })
+            .then(response => {
+                if (response.ok) {
+                    document.getElementById("status-" + id).innerText = "Paused";
+                    refreshPausedOrder();
+                    refreshPendingOrders();
+                } else {
+                    alert("No se puede pausar una orden en procesamiento.");
+                }
+            });
+        }
+
+        function refreshPausedOrder() {
+            fetch('@Url.Action("CurrentPaused", "Orders")')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("pausedOrderDiv").innerHTML = html;
+                });
+        }
+
+        function resumeOrder(id) {
+            const token = $('input[name="__RequestVerificationToken"]').val();
+            fetch('@Url.Action("Resume", "Orders")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                },
+                body: `id=${id}&__RequestVerificationToken=${token}`
+            })
+            .then(response => {
+                if (response.ok) {
+                    refreshPausedOrder();
+                    refreshPendingOrders();
+                } else {
+                    alert("No se pudo reanudar.");
+                }
+            });
+        }
+
+        function refreshPendingOrders() {
+            fetch('@Url.Action("CurrentPending", "Orders")')
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById("pendingOrdersBody").innerHTML = html;
+                });
+        }
+
+        function advanceAndRefresh() {
+            const token = $('input[name="__RequestVerificationToken"]').val();
+
+            fetch('@Url.Action("AdvanceProcessingQueue", "Orders")', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'RequestVerificationToken': token
+                },
+                body: `__RequestVerificationToken=${token}`
+            })
+            .then(response => {
+                if (response.ok) {
+                    refreshProcessingOrder();
+                    refreshPendingOrders(); 
+                } else {
+                    alert("No se pudo avanzar la cola.");
+                }
+            });
+        }
+
+
+
+
+    </script>
+}

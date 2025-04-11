@@ -1,0 +1,52 @@
+﻿@model IEnumerable<CAAP2.Data.Order>
+
+@{
+    var currentOrder = Model.FirstOrDefault(o => o.IsBeingProcessed);
+    var queuedOrders = Model.Where(o => !o.IsBeingProcessed);
+}
+
+@if (currentOrder != null)
+{
+    <div class="card border-success mb-3">
+        <div class="card-header bg-success text-white">
+            En ejecución
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Orden #@currentOrder.OrderID</h5>
+            <p class="card-text">
+                <strong>Detalle:</strong> @currentOrder.OrderDetail <br />
+                <strong>Cliente:</strong> @currentOrder.User.FullName <br />
+                <strong>Fecha:</strong> @(currentOrder.CreatedDate.HasValue ? currentOrder.CreatedDate.Value.ToShortDateString() : "Sin fecha") <br />
+                <strong>Prioridad:</strong> @currentOrder.Priority
+            </p>
+            <i class="fas fa-cog fa-spin"></i> Procesando...
+
+        </div>
+    </div>
+}
+else
+{
+    <div class="alert alert-info">No hay ninguna orden en ejecución.</div>
+}
+
+
+@if (queuedOrders.Any())
+{
+    <div class="card mt-4">
+        <div class="card-header bg-warning text-dark">
+            En cola
+        </div>
+        <ul class="list-group list-group-flush">
+            @foreach (var order in queuedOrders)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <div>
+                        <strong>#@order.OrderID</strong> - @order.OrderDetail <br />
+                        <small>Prioridad: @order.Priority | Cliente: @order.User.FullName</small>
+                    </div>
+                    <button class="btn btn-danger btn-sm" onclick="cancelOrderProcessing(@order.OrderID)">Cancelar</button>
+                </li>
+            }
+        </ul>
+    </div>
+}
