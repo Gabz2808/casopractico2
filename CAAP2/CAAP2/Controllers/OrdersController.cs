@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using AdvancedProgramming.Business;
 using CAAP2.Business;
 using CAAP2.Data;
 
@@ -14,12 +15,16 @@ namespace CAAP2.Controllers
     public class OrdersController : Controller
     {
         private OrderManager _manager = new OrderManager();
+        private UserManager _userManager = new UserManager();
 
         // GET: Orders
         public ActionResult Index()
         {
 
-            return View(_manager.GetOrdersToProcess());
+            var orders = _manager.GetOrdersToProcess();
+            var processingOrder = orders.FirstOrDefault(o => o.Status == "Processing");
+            var model = new Tuple<IEnumerable<Order>, Order>(orders, processingOrder);
+            return View(model);
         }
 
         // GET: Orders/Details/5
@@ -72,6 +77,7 @@ namespace CAAP2.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.Users = _userManager.GetAllUsers();
             return View(order);
         }
 
@@ -88,6 +94,8 @@ namespace CAAP2.Controllers
                 _manager.Save();
                 return RedirectToAction("Index");
             }
+
+            ViewBag.Users = _userManager.GetAllUsers();
             return View(order);
         }
 
@@ -125,5 +133,188 @@ namespace CAAP2.Controllers
             }
             base.Dispose(disposing);
         }
+
+        // GET: Orders/CurrentProcessing
+        public PartialViewResult CurrentProcessing()
+        {
+            var processingOrders = _manager.GetAllOrders()
+                .Where(o => o.Status == "Processing")
+                .OrderBy(o => o.Priority)
+                .ThenBy(o => o.CreatedDate)
+                .ToList();
+
+            if (processingOrders.Any())
+            {
+                processingOrders[0].IsBeingProcessed = true;
+            }
+            return PartialView("ProcessingOrderPartial", processingOrders);
+        }
+
+
+        // GET: Orders/CurrentPending
+        public PartialViewResult CurrentPending()
+        {
+            var pendingOrders = _manager.GetAllOrders().Where(o => o.Status == "Pending").ToList();
+            return PartialView("PendingOrderPartial", pendingOrders);
+        }
+
+
+        // POST: Orders/Execute
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Execute(int id)
+        {
+            Order order = _manager.GetById(id);
+
+            if (order == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.NotFound);
+            }
+            if (order.Status == "Pending")
+            {
+                order.Status = "Processing";
+                _manager.Update(order);
+                _manager.Save();
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.Forbidden, "La orden no se puede ejecutar.");
+            }
+
+            
+        }
+
+        // POST: Orders/Pause
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Pause(int id)
+        {
+            Order order = _manager.GetById(id);
+            if (order == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.NotFound);
+            }
+
+            if (order.Status != "Processing")
+            {
+                order.Status = "Paused";
+                _manager.Update(order);
+                _manager.Save();
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.Forbidden, "La orden está en procesamiento y no se puede pausar.");
+            }
+        }
+
+        // GET: Orders/CurrentPaused
+        public PartialViewResult CurrentPaused()
+        {
+            var pausedOrders = _manager.GetAllOrders().Where(o => o.Status == "Paused").ToList();
+            return PartialView("PausedOrderPartial", pausedOrders);
+        }
+
+        // POST: Orders/Resume
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Resume(int id)
+        {
+            Order order = _manager.GetById(id);
+            if (order == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.NotFound);
+            }
+
+            if (order.Status == "Paused")
+            {
+                order.Status = "Pending";
+                _manager.Update(order);
+                _manager.Save();
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.Forbidden, "La orden no se pudo reanudar.");
+            }
+        }
+
+        // POST: Orders/Cancel
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Cancel(int id)
+        {
+            Order order = _manager.GetById(id);
+            if (order == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.NotFound);
+            }
+
+            if (order.Status != "Processing")
+            {
+                order.Status = "Cancelled";
+                _manager.Update(order);
+                _manager.Save();
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.Forbidden, "La orden está en procesamiento y no se puede cancelar.");
+            }
+        }
+
+        // POST: Orders/Cancel
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CancelProcessing(int id)
+        {
+            Order order = _manager.GetById(id);
+            if (order == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.NotFound);
+            }
+
+            if (!order.IsBeingProcessed)
+            {
+                order.Status = "Pending";
+                _manager.Update(order);
+                _manager.Save();
+                return new HttpStatusCodeResult(HttpStatusCode.OK);
+            }
+            else
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.Forbidden, "La orden está en procesamiento y no se puede cancelar.");
+            }
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AdvanceProcessingQueue()
+        {
+            var processingOrders = _manager.GetAllOrders()
+                .Where(o => o.Status == "Processing")
+                .OrderBy(o => o.Priority)
+                .ThenBy(o => o.CreatedDate)
+                .ToList();
+
+            if (processingOrders.Any())
+            {
+                var current = processingOrders[0];
+                current.Status = "Processed";
+                _manager.Update(current);
+
+                if (processingOrders.Count > 1)
+                {
+                    var next = processingOrders[1];
+                }
+
+                _manager.Save();
+            }
+
+            return new HttpStatusCodeResult(HttpStatusCode.OK);
+        }
+
+
     }
 }
