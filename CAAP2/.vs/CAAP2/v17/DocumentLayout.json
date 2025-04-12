@@ -1,49 +1,125 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\",
+  "WorkspaceRootPath": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\gabri\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\gabri\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\gabri\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\content\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\gabri\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\content\\global.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\content\\global.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\gabri\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\gabri\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\shared\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\shared\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\gabri\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\gabri\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\models\\identitymodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\models\\accountviewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\controllers\\managecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|c:\\users\\danny\\onedrive\\documentos\\github\\casopractico2\\caap2\\caap2\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\app_start\\startup.auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2\\views\\orders\\processingorderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\orders\\processingorderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2\\views\\orders\\pausedorderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\orders\\pausedorderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2\\views\\orders\\pendingorderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1999D76A-7E18-48E6-AC09-F69286DD526B}|CAAP2\\CAAP2.csproj|solutionrelative:caap2\\views\\orders\\pendingorderpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC5F403-5B07-4D2D-93F9-1A8191F26EFB}|CAAP2.Data\\CAAP2.Data.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2.data\\orderpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ECC5F403-5B07-4D2D-93F9-1A8191F26EFB}|CAAP2.Data\\CAAP2.Data.csproj|solutionrelative:caap2.data\\orderpartial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B989B614-A8CE-4448-A694-D02A9C60B49F}|CAAP2.Business\\CAAP2.Business.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2.business\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B989B614-A8CE-4448-A694-D02A9C60B49F}|CAAP2.Business\\CAAP2.Business.csproj|solutionrelative:caap2.business\\ordermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CF61611-9BE0-4FD6-93B9-D6CDC1A85DD4}|CAAP2.Repository\\CAAP2.Repository.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2.repository\\repositoryorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CF61611-9BE0-4FD6-93B9-D6CDC1A85DD4}|CAAP2.Repository\\CAAP2.Repository.csproj|solutionrelative:caap2.repository\\repositoryorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ECC5F403-5B07-4D2D-93F9-1A8191F26EFB}|CAAP2.Data\\CAAP2.Data.csproj|C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\caap2.data\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{ECC5F403-5B07-4D2D-93F9-1A8191F26EFB}|CAAP2.Data\\CAAP2.Data.csproj|solutionrelative:caap2.data\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 196,
+      "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 17,
-          "SelectedChildIndex": 15,
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -58,127 +134,333 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{2d7728c2-de0a-45b5-99aa-89b609dfde73}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Lockout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\Lockout.cshtml",
-              "RelativeDocumentMoniker": "CAAP2\\Views\\Shared\\Lockout.cshtml",
-              "ToolTip": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\Lockout.cshtml",
-              "RelativeToolTip": "CAAP2\\Views\\Shared\\Lockout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T23:38:50.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "CAAP2\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "CAAP2\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T23:34:49.439Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Contact.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Home\\Contact.cshtml",
-              "RelativeDocumentMoniker": "CAAP2\\Views\\Home\\Contact.cshtml",
-              "ToolTip": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Home\\Contact.cshtml",
-              "RelativeToolTip": "CAAP2\\Views\\Home\\Contact.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T23:34:22.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Home\\About.cshtml",
-              "RelativeDocumentMoniker": "CAAP2\\Views\\Home\\About.cshtml",
-              "ToolTip": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Home\\About.cshtml",
-              "RelativeToolTip": "CAAP2\\Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T23:34:16.68Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Global.css",
-              "DocumentMoniker": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Content\\Global.css",
-              "RelativeDocumentMoniker": "CAAP2\\Content\\Global.css",
-              "ToolTip": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Content\\Global.css",
-              "RelativeToolTip": "CAAP2\\Content\\Global.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-11T23:28:02.195Z",
+              "DocumentIndex": 1,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CAAP2\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CAAP2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA5wCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T02:17:25.247Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Site.css",
-              "DocumentMoniker": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Content\\Site.css",
-              "RelativeDocumentMoniker": "CAAP2\\Content\\Site.css",
-              "ToolTip": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Content\\Site.css",
-              "RelativeToolTip": "CAAP2\\Content\\Site.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-04-11T23:27:42.54Z",
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T02:16:37.743Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "CAAP2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "CAAP2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAApAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T23:16:54.609Z",
+              "WhenOpened": "2025-04-12T02:12:17.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Web.config",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Web.config",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Web.config",
+              "RelativeToolTip": "CAAP2\\Views\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-12T01:59:59.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAABQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T01:50:19.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CAAP2\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CAAP2\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAEwD4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:40:11.191Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\Index.cshtml",
-              "RelativeDocumentMoniker": "CAAP2\\Views\\Orders\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Gabri\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\Index.cshtml",
-              "RelativeToolTip": "CAAP2\\Views\\Orders\\Index.cshtml",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEUAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T23:14:55.967Z",
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Web.config",
+              "RelativeDocumentMoniker": "CAAP2\\Web.config",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Web.config",
+              "RelativeToolTip": "CAAP2\\Web.config",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-10T05:09:58.214Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IdentityModels.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Models\\IdentityModels.cs",
+              "RelativeDocumentMoniker": "CAAP2\\Models\\IdentityModels.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Models\\IdentityModels.cs",
+              "RelativeToolTip": "CAAP2\\Models\\IdentityModels.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAuwBsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:31:22.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-08T02:20:43.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAYwBsAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T07:18:04.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AccountViewModels.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Models\\AccountViewModels.cs",
+              "RelativeDocumentMoniker": "CAAP2\\Models\\AccountViewModels.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Models\\AccountViewModels.cs",
+              "RelativeToolTip": "CAAP2\\Models\\AccountViewModels.cs",
+              "ViewState": "AgIAAEQAAAAAAAAAAAA2wEQAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:52:10.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ManageController.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Controllers\\ManageController.cs",
+              "RelativeDocumentMoniker": "CAAP2\\Controllers\\ManageController.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Controllers\\ManageController.cs",
+              "RelativeToolTip": "CAAP2\\Controllers\\ManageController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:45:50.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-12T01:41:48.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "CAAP2\\App_Start\\FilterConfig.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "CAAP2\\App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:43:45.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Startup.cs",
+              "RelativeDocumentMoniker": "CAAP2\\Startup.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Startup.cs",
+              "RelativeToolTip": "CAAP2\\Startup.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:38:22.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Startup.Auth.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\App_Start\\Startup.Auth.cs",
+              "RelativeDocumentMoniker": "CAAP2\\App_Start\\Startup.Auth.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\App_Start\\Startup.Auth.cs",
+              "RelativeToolTip": "CAAP2\\App_Start\\Startup.Auth.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAUwEMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-12T01:36:24.473Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PausedOrderPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\PausedOrderPartial.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Orders\\PausedOrderPartial.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\PausedOrderPartial.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Orders\\PausedOrderPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T03:31:12.385Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProcessingOrderPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\ProcessingOrderPartial.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Orders\\ProcessingOrderPartial.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\ProcessingOrderPartial.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Orders\\ProcessingOrderPartial.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-10T05:37:52.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "CAAP2\\Controllers\\OrdersController.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "CAAP2\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAADsAAACANTMzM7MswE8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T02:22:53.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PendingOrderPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\PendingOrderPartial.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Orders\\PendingOrderPartial.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\PendingOrderPartial.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Orders\\PendingOrderPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T04:45:11.86Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CAAP2\\Views\\Orders\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2\\Views\\Orders\\Edit.cshtml",
+              "RelativeToolTip": "CAAP2\\Views\\Orders\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-11T02:56:05.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "OrderPartial.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2.Data\\OrderPartial.cs",
+              "RelativeDocumentMoniker": "CAAP2.Data\\OrderPartial.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2.Data\\OrderPartial.cs",
+              "RelativeToolTip": "CAAP2.Data\\OrderPartial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T06:00:59.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderManager.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2.Business\\OrderManager.cs",
+              "RelativeDocumentMoniker": "CAAP2.Business\\OrderManager.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2.Business\\OrderManager.cs",
+              "RelativeToolTip": "CAAP2.Business\\OrderManager.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAjwBMAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-08T02:01:58.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RepositoryOrder.cs",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2.Repository\\RepositoryOrder.cs",
+              "RelativeDocumentMoniker": "CAAP2.Repository\\RepositoryOrder.cs",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2.Repository\\RepositoryOrder.cs",
+              "RelativeToolTip": "CAAP2.Repository\\RepositoryOrder.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-10T05:11:07.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "App.Config",
+              "DocumentMoniker": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2.Data\\App.Config",
+              "RelativeDocumentMoniker": "CAAP2.Data\\App.Config",
+              "ToolTip": "C:\\Users\\danny\\OneDrive\\Documentos\\GitHub\\casopractico2\\CAAP2\\CAAP2.Data\\App.Config",
+              "RelativeToolTip": "CAAP2.Data\\App.Config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAADKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-10T05:10:31.095Z"
             }
           ]
         }
