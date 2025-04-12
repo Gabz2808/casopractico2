@@ -1,59 +1,62 @@
 ﻿@model Tuple<IEnumerable<CAAP2.Data.Order>, CAAP2.Data.Order>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Órdenes";
 }
 @Html.AntiForgeryToken()
-<div class="row">
-    <div class="col-md-9">
-        <h3>Orders by priority (Execution view)</h3>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th># Orden</th>
-                    <th>Detalle</th>
-                    <th>Fecha</th>
-                    <th>Prioridad</th>
-                    <th>Cliente</th>
-                    <th>Premium</th>
-                    <th>Estado</th>
-                    <th>Acciones</th>
-                </tr>
-            </thead>
-            <tbody id="pendingOrdersBody">
-                @Html.Partial("PendingOrderPartial", Model.Item1.Where(o => o.Status == "Pending"))
-            </tbody>
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-9">
+            <h3 class="mb-3 text-success"><i class="fa fa-utensils me-2"></i> Órdenes </h3>
+            <table class="table table-bordered table-hover bg-white shadow-sm rounded">
+                <thead class="thead-light">
+                    <tr>
+                        <th><i class="fa fa-hashtag"></i> Orden</th>
+                        <th><i class="fa fa-info-circle"></i> Detalle</th>
+                        <th><i class="fa fa-calendar-alt"></i> Fecha</th>
+                        <th><i class="fa fa-exclamation-triangle text-warning"></i> Prioridad</th>
+                        <th><i class="fa fa-user"></i> Cliente</th>
+                        <th><i class="fa fa-star text-warning"></i> Premium</th>
+                        <th><i class="fa fa-check-circle text-info"></i> Estado</th>
+                        <th><i class="fa fa-tools"></i> Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="pendingOrdersBody">
+                    @Html.Partial("PendingOrderPartial", Model.Item1.Where(o => o.Status == "Pending"))
+                </tbody>
+            </table>
+        </div>
 
-        </table>
-    </div>
-
-    <div class="col-md-3">
-        <div class="mb-4">
-            <div class="d-flex justify-content-between align-items-center mb-2">
-                <h5 class="mb-0">Orden en Proceso</h5>
-                <button class="btn btn-outline-secondary btn-sm" onclick="advanceAndRefresh()" title="Actualizar orden en proceso">
-                    🔄
-                </button>
+        <div class="col-md-3">
+            <div class="card mb-4 shadow rounded">
+                <div class="card-header bg-warning text-dark d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0"><i class="fa fa-fire me-2"></i> Preparando</h5>
+                    <button class="btn btn-outline-dark btn-sm" onclick="advanceAndRefresh()" title="Avanzar preparación">
+                        <i class="fa fa-forward"></i>
+                    </button>
+                </div>
+                <div class="card-body bg-light" id="processingOrderDiv">
+                    @Html.Partial("ProcessingOrderPartial", Model.Item1.Where(o => o.Status == "Processing"))
+                </div>
             </div>
-            <div id="processingOrderDiv">
-                @Html.Partial("ProcessingOrderPartial", Model.Item1.Where(o => o.Status == "Processing"))
+
+            <div class="card shadow rounded">
+                <div class="card-header bg-secondary text-white">
+                    <h5 class="mb-0"><i class="fa fa-pause-circle me-2"></i> En Espera</h5>
+                </div>
+                <div class="card-body bg-light" id="pausedOrderDiv">
+                    @Html.Partial("PausedOrderPartial", Model.Item1.Where(o => o.Status == "Paused"))
+                </div>
             </div>
         </div>
-        <div>
-            <h5 class="mb-2">Orden en Pausa</h5>
-            <div id="pausedOrderDiv">
-                @Html.Partial("PausedOrderPartial", Model.Item1.Where(o => o.Status == "Paused"))
-            </div>
-        </div>
     </div>
-
 </div>
 
 @section Scripts {
     <script>
-
+        // ... (Las funciones JavaScript permanecen sin cambios)
         function executeOrder(id) {
-            if (!confirm("¿Deseas ejecutar esta orden?")) return;
+            if (!confirm("¿Marcar orden como en preparación?")) return;
             const token = $('input[name="__RequestVerificationToken"]').val();
             fetch('@Url.Action("Execute", "Orders")', {
                 method: 'POST',
@@ -65,12 +68,12 @@
             })
             .then(response => {
                 if (response.ok) {
-                    document.getElementById("status-" + id).innerText = "Processing";
+                    document.getElementById("status-" + id).innerText = "Preparando";
                     document.getElementById("order-row-" + id).remove();
                     refreshProcessingOrder();
                     refreshPendingOrders();
                 } else {
-                    alert("No se pudo ejecutar la orden.");
+                    alert("No se pudo marcar la orden.");
                 }
             });
         }
@@ -82,8 +85,9 @@
                 document.getElementById("processingOrderDiv").innerHTML = html;
             });
         }
+
         function cancelOrder(id) {
-            if (!confirm("¿Estás seguro de que deseas cancelar esta orden?")) return;
+            if (!confirm("¿Cancelar esta orden?")) return;
             const token = $('input[name="__RequestVerificationToken"]').val();
             fetch('@Url.Action("Cancel", "Orders")', {
                 method: 'POST',
@@ -104,7 +108,7 @@
         }
 
         function cancelOrderProcessing(id) {
-            if (!confirm("¿Estás seguro de que deseas cancelar esta orden?")) return;
+            if (!confirm("¿Devolver orden a pendientes?")) return;
             const token = $('input[name="__RequestVerificationToken"]').val();
             fetch('@Url.Action("CancelProcessing", "Orders")', {
                 method: 'POST',
@@ -119,13 +123,13 @@
                     refreshProcessingOrder();
                     refreshPendingOrders();
                 } else {
-                    alert("No se pudo cancelar la orden.");
+                    alert("No se pudo devolver la orden.");
                 }
             });
         }
 
         function pauseOrder(id) {
-            if (!confirm("¿Deseas pausar esta orden?")) return;
+            if (!confirm("¿Poner orden en espera?")) return;
             const token = $('input[name="__RequestVerificationToken"]').val();
             fetch('@Url.Action("Pause", "Orders")', {
                 method: 'POST',
@@ -137,11 +141,11 @@
             })
             .then(response => {
                 if (response.ok) {
-                    document.getElementById("status-" + id).innerText = "Paused";
+                    document.getElementById("status-" + id).innerText = "En Espera";
                     refreshPausedOrder();
                     refreshPendingOrders();
                 } else {
-                    alert("No se puede pausar una orden en procesamiento.");
+                    alert("No se puede poner en espera una orden en preparación.");
                 }
             });
         }
@@ -196,15 +200,11 @@
             .then(response => {
                 if (response.ok) {
                     refreshProcessingOrder();
-                    refreshPendingOrders(); 
+                    refreshPendingOrders();
                 } else {
-                    alert("No se pudo avanzar la cola.");
+                    alert("No se pudo avanzar la cola de preparación.");
                 }
             });
         }
-
-
-
-
     </script>
 }
